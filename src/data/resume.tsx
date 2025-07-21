@@ -1,9 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
-import project_SOCIAL_MEDIA from "../../public/social_media.png";
-import AIMASTERCRAFT from "../../public/AIMASTERCRAFT.png";
-import CSV_Analyzer from "../../public/InsightFlow.png";
-import ChatWidget from "../../public/ChatWidgetLeft.png";
+import { HomeIcon } from "lucide-react";
 
 export const DATA = {
   name: "Jorge Ernesto",
@@ -71,7 +67,7 @@ export const DATA = {
   projects: [
     {
       title: "Red Social",
-      href: "https://chatcollect.com",
+      href: "",
       dates: "Jan 2022 - Feb 2023",
       active: true,
       description:
@@ -87,22 +83,17 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
           href: "https://github.com/Jorge-Ernesto1355/socialMedia",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: project_SOCIAL_MEDIA,
+      image: "/social_media.png",
       video: "",
     },
     {
       title: "AI MasterCraft",
-      href: "https://magicui.design",
+      href: "",
       dates: "agosto 2024 - febrero 2025",
       active: true,
       description:
@@ -123,7 +114,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: AIMASTERCRAFT,
+      image: "/AIMASTERCRAFT.png",
       video: "",
     },
     {
@@ -148,7 +139,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: CSV_Analyzer,
+      image: "/InsightFlow.png",
       video: "",
     },
     {
@@ -175,7 +166,7 @@ export const DATA = {
           href: "https://www.npmjs.com/package/react-chat-ai-widget",
         },
       ],
-      image: ChatWidget,
+      image: "/ChatWidgetLeft.png",
     },
   ],
 } as const;
