@@ -157,7 +157,7 @@ export const DATA = {
       dates: "May 2025 - july 2025",
       active: false,
       description:
-        "React Chat AI Widget es una librería de chat fácil de integrar que permite crear asistentes conversacionales personalizados. Tú defines las respuestas y el comportamiento del bot, ideal para proyectos que requieren interacción controlada con IA. Construido con React.js, TypeScript y tecnologías modernas como TailwindCSS y React Chat AI Widget es una librería de chat fácil de integrar que permite crear asistentes conversacionales personalizados. Tú defines las respuestas y el comportamiento del bot, ideal para proyectos que requieren interacción controlada con IA. Construido con Next.js, TypeScript y tecnologías modernas como TailwindCSS, Prisma y Cloudflare Workers. Cloudflare Workers.",
+        "React Chat AI Widget es una librería de chat fácil de integrar que permite crear asistentes conversacionales personalizados. Tú defines las respuestas y el comportamiento del bot, ideal para proyectos que requieren interacción controlada con IA. Construido con Next.js, TypeScript y tecnologías modernas como TailwindCSS Cloudflare Workers.",
       technologies: [
         "React",
         "Typescript",
