@@ -18,10 +18,10 @@ interface Props {
   dates: string;
   tags: readonly string[];
   link?: string;
-  image?: string;
+  image?: any;
   video?: string;
   links?: readonly {
-    icon: React.ReactNode;
+    icon?: React.ReactNode;
     type: string;
     href: string;
   }[];

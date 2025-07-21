@@ -9,7 +9,6 @@ export async function generateStaticParams() {
   const posts = await getBlogPosts();
   return posts.map((post) => ({ slug: post.slug }));
 }
-
 export async function generateMetadata({
   params,
 }: {
@@ -17,7 +16,11 @@ export async function generateMetadata({
     slug: string;
   };
 }): Promise<Metadata | undefined> {
-  let post = await getPost(params.slug);
+  let post = (await getPost(params.slug)) || [];
+
+  if (!post) {
+    return;
+  }
 
   let {
     title,
@@ -25,6 +28,7 @@ export async function generateMetadata({
     summary: description,
     image,
   } = post.metadata;
+
   let ogImage = image ? `${DATA.url}${image}` : `${DATA.url}/og?title=${title}`;
 
   return {
